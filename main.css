@@ -1,14 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
   margin: 0;
   padding: 0;
   background-color: #121212;
   color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
-h4, h5, span, a{
+span, a{
   color: #04AA6D;
+  text-decoration: none;
+}
+h2{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: 800;
 }
 .navbar-nav a{
   color: #fff;
+}
+.emphasis{
+  font-family: 'Courier New';
+  color: #000;
+  font-weight: 500;
+}
+nav{
+  text-align: left;
+  margin: 10px;
+  font-size: 20px;
+}
+nav a{
+  text-decoration: none;
+}
+.btn{
+  background-color: #167348;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn a{
+  text-decoration: none;
 }
 .user-img{
   width: 180px;
@@ -16,30 +47,39 @@ h4, h5, span, a{
   border-radius: 50%;
   border: 4px solid #04AA6D;
   padding: 5px;
+  margin-top: 30px;
 }
 .hero{
   border: 1px solid #121212;
   background: url(hero.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  height: 450px;
+  height: 460px;
 }
 .socials{
   margin-top: -20px;
 }
 .socials a{
-  border-radius:50px;
-  width: 60px;
-  height: 60px;
+  border-radius:10px;
   text-align: center;
   font-size: 25px;
   border: 3px solid #212121;
 }
-.active{
-  color: #04AA6D;
-}
 #about, #resume{
   margin: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 .card{
   background: #212121;
@@ -47,4 +87,38 @@ h4, h5, span, a{
   border: 2px solid #121212;
   text-align: left;
   border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+p{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+#resume {
+  border-collapse: collapse;
+  width: 95%;
+  margin: auto;
+}
+
+#resume td, #customers th {
+  border: 1px solid #212121;
+  padding: 8px;
+}
+
+#resume tr:nth-child(even){
+  background-color: #212121;
+}
+
+#resume tr:hover {
+  background-color: #04AA6D;
+}
+
+#resume th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
 }
