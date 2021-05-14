@@ -35,8 +35,9 @@ nav a{
 .btn{
   background-color: #167348;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
+  margin-top: 10px;
 }
 .btn a{
   text-decoration: none;
@@ -54,7 +55,7 @@ nav a{
   background: url(hero.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  height: 460px;
+  height: 500px;
 }
 .socials{
   margin-top: -20px;
@@ -90,6 +91,16 @@ nav a{
   padding: 10px;
   margin-bottom: 10px;
 
+}
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 p{
   margin-top: 8px;
